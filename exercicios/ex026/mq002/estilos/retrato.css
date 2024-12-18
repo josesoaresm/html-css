@@ -1,3 +1,8 @@
 @ clipPath "UTF-8";
 
 /*Aparelho em pé (portrait)*/
+
+body {
+    background-image: url(../imagens/brasilia.jpg
+    background-position: center bottom;
+}

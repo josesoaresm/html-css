@@ -22,12 +22,18 @@ Grandes telas: acina de 1200px
       }
 
     main {
+        width: 90vw;
         border: 2px solid black;
     } 
     
     main h1 {
        text-shadow: none; 
     color: black;   
+    }
+
+    main::after { /*Depois do main wu quera um texto*/
+        content: 'Essa impressão foi feita através do site www.cursoemvideo.com';
+        text-decoration: overline; /*coloca uma linha em cima do texto*/
     }
 
     img#phone {display: none;}     

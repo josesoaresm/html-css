@@ -18,14 +18,41 @@ header {
     background-color:gray;
     color: white;
     padding: 10px;
+
+    display: flex;
+    flex-flow: row wrap;  /* Vai quebrar*/
+    justify-content: space-between;  /*deixar  a nav do lado direito */
+    align-items: center;  /* alinhamento centralizado no eixo transversal */
 }
 
 header > h1 {
     border: 1px dotted black;  /*borda pontilhada*/
+    flex: 0 0 200px; /* Não vai crescer nem encolher fica fixo com tamanho de 200px */
 }
 
-header > nav {
+header > nav {  /* É um item qua tambem émum conteiner detro do outro que vai controlar os itens*/
     border: 1px dotted black;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end; /* Ficar colado do lado direito */
+}
+
+header > nav a {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+}
+
+header > nav a:hover {
+    background-color: white;
+    color: black;
+    transition: 5.s;
+
 }
 
 main {

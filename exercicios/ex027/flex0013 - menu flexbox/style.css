@@ -26,12 +26,13 @@ header {
 }
 
 header > h1 {
-    border: 1px dotted black;  /*borda pontilhada*/
+    /*border: 1px dotted black;*/  /*borda pontilhada*/
     flex: 0 0 200px; /* Não vai crescer nem encolher fica fixo com tamanho de 200px */
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.404);
 }
 
 header > nav {  /* É um item qua tambem émum conteiner detro do outro que vai controlar os itens*/
-    border: 1px dotted black;
+    /*border: 1px dotted black;*/
 
     display: flex;
     flex-flow: row wrap;
